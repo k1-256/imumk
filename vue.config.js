@@ -3,7 +3,6 @@ module.exports = {
   devServer: {
     disableHostCheck: true,
   },
-  transpileDependencies: [
-    'vuetify',
-  ],
+  transpileDependencies: ["vuetify"],
+  publicPath: process.env.NODE_ENV === "production" ? "/imumk/" : "/",
 };
